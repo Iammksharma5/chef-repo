@@ -12,3 +12,33 @@ end
 4. then use below command to apply: it will create a file named : hola and put the content in it as mentioned in the web.rb file.
 
 chef-apply web.rb
+
+
+
+#############################################################################################################
+
+Using Recipe installing Apache web servet 'httpd'.
+
+##############################################################################################################
+
+5. same above step from 2 .
+
+> Create one more web.rb file and put below code:  ( do means it will create and end - will end the code) it does not mention in it so it will use default setting.
+
+
+
+package 'httpd'
+service 'httpd' do
+
+action [:enable , :start]
+end
+
+file '/var/www/html/index.html' do 
+
+content '<html> <body> Welcome to My Apache world</body> <marquee><h1> NOW ITS UP AND RUNNING</h1></marquee></html>'
+end
+
+
+6. then execute below command
+
+     chef-apply web.rb
