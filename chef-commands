@@ -43,12 +43,18 @@ end
 
 
 6. then execute below command
-<<<<<<< HEAD
 
      chef-apply web.rb
-=======
+
    
-     chef-apply web.rb
+7. If you do it again "chef-apply web.rb " without any modification same file it will do nothing instead show you "up to date" :
+
+ chef-apply web.rb
+Recipe: (chef-apply cookbook)::(chef-apply recipe)
+  * dnf_package[httpd] action install (up to date)
+  * service[httpd] action enable (up to date)
+  * service[httpd] action start (up to date)
+  * file[/var/www/html/index.html] action create (up to date)  ----- ( check it shows up to date).
      
   
->>>>>>> 2b0f2459682ef998721f8d944dfe5d2d76a5d547
+
