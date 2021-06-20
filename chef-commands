@@ -1,0 +1,14 @@
+1. Create a directory name " chef-repo" or any name
+
+2. cd chef-repo then create a file name "web.rb" or any name with and the extension must be ".rb"  it means ruby.
+
+3. vi first.rb   --------- means edit the file put some code as ruby and save it as below .
+
+file '/root/mychef/hola' do
+content 'welcome again i did it'
+end
+
+
+4. then use below command to apply: it will create a file named : hola and put the content in it as mentioned in the web.rb file.
+
+chef-apply web.rb
