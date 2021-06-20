@@ -15,6 +15,9 @@ chef-apply web.rb
 
 
 
+
+=======
+
 #############################################################################################################
 
 Using Recipe installing Apache web servet 'httpd'.
@@ -40,5 +43,12 @@ end
 
 
 6. then execute below command
+<<<<<<< HEAD
 
      chef-apply web.rb
+=======
+   
+     chef-apply web.rb
+     
+  
+>>>>>>> 2b0f2459682ef998721f8d944dfe5d2d76a5d547
